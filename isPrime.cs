@@ -1,13 +1,13 @@
 using System;
 public class Casa
 {
-    public static bool isPrime(int num)
+    public static bool IsPrime(int n)
     {
         //if num is 1 or 0, neither prime or composite case.
-        if (num <= 1)
+        if (n <= 1)
             return false;
-        for (int i=2; i <=Math.Sqrt(num); i++)
-          if (num %i == 0) 
+        for (int i=2; i <=Math.Sqrt(n); i++)
+          if (n %i == 0) 
             return false;
         return true;
     }
@@ -15,7 +15,7 @@ public class Casa
     {
 	  Console.Write("Enter a number : ");
       int n= Convert.ToInt32(Console.ReadLine());
-        if (isPrime(n))
+        if (IsPrime(n))
           Console.WriteLine(n+" is a prime number");
         else
           Console.WriteLine(n+" is not a prime number");
