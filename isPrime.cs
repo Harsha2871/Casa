@@ -13,11 +13,14 @@ public class Casa
     }
     public static void Main()
     {
-	  Console.Write("Enter a number : ");
-      int n= Convert.ToInt32(Console.ReadLine());
-        if (IsPrime(n))
-          Console.WriteLine(n+" is a prime number");
-        else
-          Console.WriteLine(n+" is not a prime number");
+    
+        for(;;){
+	        Console.Write("Enter a number : ");
+            int n= Convert.ToInt32(Console.ReadLine());
+            if (IsPrime(n))
+                Console.WriteLine(n+" is a prime number");
+            else
+                Console.WriteLine(n+" is not a prime number");
+        }
     }
 }
