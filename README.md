@@ -12,8 +12,8 @@ We iterate from 2 to sqrt(n) because...
 
 Let's say m = sqrt(n) then m × m = n. Now if n is not a prime then n can be written as n = a*b, so m × m = a*b. Notice that m is a real number whereas n, a and b are natural numbers.
 Now there can be 3 cases:
-a > m => b < m
-a = m => b = m
+a > m => b < m,
+a = m => b = m,
 a < m => b > m
 In all 3 cases, min(a, b) ≤ m. Hence if we search till m, we are bound to find at least one factor of n, which is enough to show that n is not prime.
 
